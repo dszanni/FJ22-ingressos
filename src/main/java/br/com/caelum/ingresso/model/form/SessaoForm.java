@@ -16,7 +16,7 @@ public class SessaoForm {
 
 	private Integer id;
 
-	@NotNull
+//	@NotNull
 	private Integer salaId;
 
 	@DateTimeFormat(pattern = "HH:mm")

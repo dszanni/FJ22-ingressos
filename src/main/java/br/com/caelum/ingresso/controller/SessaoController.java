@@ -28,10 +28,11 @@ public class SessaoController {
 	@Autowired
 	private SessaoDao sessaoDao;
 
-	@GetMapping(value = "/admin/sessao")
+	@GetMapping("/admin/sessao")
 	public ModelAndView form(@RequestParam("salaId") Integer salaId, SessaoForm form) {
 
 		form.setSalaId(salaId);
+		
 		ModelAndView modelAndView = new ModelAndView("sessao/sessao");
 
 		modelAndView.addObject("sala", salaDao.findOne(salaId));

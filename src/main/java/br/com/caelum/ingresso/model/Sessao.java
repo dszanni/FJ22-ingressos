@@ -20,10 +20,8 @@ public class Sessao {
 	
 	@ManyToOne
 	private Filme filme;
-
 	
-	public Sessao(){
-		
+	public Sessao(){	
 	}
 	
 	public Sessao(LocalTime horario, Filme filme, Sala sala) {
